@@ -41,7 +41,7 @@ namespace Unit_Testing
         {
             using StringWriter sw = new StringWriter();
             Console.SetOut(sw);
-            Program.GetSupplier(16);
+            Program.GetSupplier(0);
             var result = sw.ToString().Trim();
             Assert.That(result == "no supplier found with id 0");
         }
